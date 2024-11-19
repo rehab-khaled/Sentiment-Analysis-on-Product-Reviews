@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Tool</title>
+    <!-- Google Fonts for Professional Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icon_c.png') }}">
+</head>
+<body>
+    <!-- Logo in Top Left Corner -->
+    <div class="logo">
+        <img src="{{ url_for('static', filename='Logo5.png') }}" alt="Logo Image" /> Sentiment Analysis
+    </div>
+
+    <div class="container">
+        <!-- Hook Sentence -->
+        <p class="hook">Uncover the hidden emotions behind the words!</p>
+
+        <!-- Sentiment Analysis Form -->
+        <form id="sentiment-form" method="POST" action="/analyze">
+            <textarea class="form-control" id="inputName" name="user" required placeholder="Type your text here...">{{ user_input }}</textarea>
+            <button type="submit" id="analyze-btn"><i class="fas fa-check"></i> Analyze</button>
+            <div id="result" style="color: #074b45; font-weight: bold;">{{ result }}</div>
+        </form>
+
+        <!-- Slider for Sentiment Visualization -->
+        <div class="big">
+            <div class="solider"></div>
+            <div class="circle"></div>
+        </div>
+
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

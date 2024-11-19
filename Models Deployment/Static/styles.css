@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --slider-bg-color: #1B4A99;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #38ef7d, #11998e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+form {
+    margin-bottom: 20px;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    resize: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+textarea:focus {
+    border-color: #074b45;
+    outline: none;
+}
+button {
+    padding: 10px 20px;
+    background-color: #074b45;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+    margin: 20px auto;
+}
+button:hover {
+    background-color: #ffffff;
+    color : #074b45;
+    font-weight: bold;
+}
+
+
+.big{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.solider{
+    background-color: var(--slider-bg-color);
+    width: 140px;
+    height: 65px;
+    border-radius: 85px;
+    padding: 5px;
+    box-shadow: 0 10px 25px var(--slider-bg-color);
+    transform: translateX(27.5px)
+}
+.circle{
+    background-color: #FFFFFF;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: relative;
+    right: 70px;
+    top: 0px;
+    transition: 0.5s
+}
+    .circle::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--slider-bg-color);
+    box-shadow: 28px 0 0 var(--slider-bg-color);
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    transition: 0.5s
+}
+.circle::after{
+    content: "";
+    width: 20px;
+    height: 8px;
+    background-color: var(--slider-bg-color);
+    position: absolute;
+    bottom: 10px;
+    left:17.5px;
+    transition: 0.5s;
+}
+.circle.negative::after {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.circle.positive::after {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+    /* input:checked ~ .solider{
+    --bgcolor: green;
+    box-shadow: 0 10px 25px #77FD84
+}
+    input:checked ~ .circle::after{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+    input:checked ~ .circle{
+    transform: translateX(75px);
+    --bgcolor: green
+} */
+
+
+#result {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+}
+.logo img {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+}
+.hook {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.face {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease;
+}
+/* Keyframes for positive (happy face) */
+@keyframes happyFace {
+    0% { background-image: url('https://www.svgrepo.com/show/202305/happy.svg'); }
+    100% { background-image: url('https://www.svgrepo.com/show/202305/happy.svg'); }
+}
+
+/* Keyframes for negative (sad face) */
+@keyframes sadFace {
+    0% { background-image: url('https://www.svgrepo.com/show/199925/sad.svg'); }
+    100% { background-image: url('https://www.svgrepo.com/show/199925/sad.svg'); }
+}
+
+/* Default state for the face (happy by default) */
+.positive {
+    animation: happyFace 1s forwards;
+}
+
+.negative {
+    animation: sadFace 1s forwards;
+}
+
+/* Media Queries for Small Devices */
+@media (max-width: 600px){
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .hook {
+        font-size: 1.5rem;
+    }
+    textarea {
+        height: 80px;
+    }
+    button {
+        width: 100%;
+    }
+}
