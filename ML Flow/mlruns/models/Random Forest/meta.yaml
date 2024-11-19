@@ -1,0 +1,7 @@
+aliases:
+  randomforest_bestmodel: '1'
+creation_timestamp: 1729857593761
+description: A robust ensemble model using multiple decision trees for high accuracy
+  and precision, making it ideal for complex data patterns.
+last_updated_timestamp: 1729871567153
+name: Random Forest

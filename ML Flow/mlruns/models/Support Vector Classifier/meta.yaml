@@ -1,0 +1,9 @@
+aliases:
+  svc_highrecall: '1'
+creation_timestamp: 1729857763664
+description: ' A Support Vector Machine model, highly effective with a notable recall
+  score, suitable for scenarios where minimizing false negatives is crucial.
+
+  '
+last_updated_timestamp: 1729871586811
+name: Support Vector Classifier

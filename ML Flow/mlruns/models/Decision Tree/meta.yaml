@@ -1,0 +1,10 @@
+aliases:
+  decisiontree_classifier: '1'
+creation_timestamp: 1729869759358
+description: This Decision Tree model offers a solid balance between precision and
+  recall, with a slightly higher recall than precision. It is a good option for explainability
+  and easy interpretation of decision boundaries, making it suitable for applications
+  where model transparency is essential. However, it might slightly overfit compared
+  to Random Forest.
+last_updated_timestamp: 1729871512285
+name: Decision Tree

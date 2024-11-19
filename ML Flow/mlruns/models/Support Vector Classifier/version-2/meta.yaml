@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1729857789127
+current_stage: Deleted_Internal
+description: ''
+last_updated_timestamp: 1729869228811
+name: Support Vector Classifier
+run_id: 6f3c48a06a244e0b89e5b4cb8f5cb191
+run_link: ''
+source: models:/Support Vector Classifier/1
+status: READY
+status_message: null
+storage_location: file:///C:/Users/BESTWAY/Downloads/Technical Project/ML Flow/Sentiment_Analysis_Artifacts/6f3c48a06a244e0b89e5b4cb8f5cb191/artifacts/SVC
+user_id: null
+version: 2

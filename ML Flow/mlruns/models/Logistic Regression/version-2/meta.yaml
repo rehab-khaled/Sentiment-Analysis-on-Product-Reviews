@@ -1,0 +1,15 @@
+aliases: []
+creation_timestamp: 1729857737944
+current_stage: Deleted_Internal
+description: ''
+last_updated_timestamp: 1729869210094
+name: Logistic Regression
+run_id: dafea48cbbfc4cefbc9ebb888daa1848
+run_link: ''
+source: models:/Logistic Regression/1
+status: READY
+status_message: null
+storage_location: file:///C:/Users/BESTWAY/Downloads/Technical Project/ML Flow/Sentiment_Analysis_Artifacts/dafea48cbbfc4cefbc9ebb888daa1848/artifacts/Logistic
+  Regression
+user_id: null
+version: 2

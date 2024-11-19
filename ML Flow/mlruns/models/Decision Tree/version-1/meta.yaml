@@ -1,0 +1,18 @@
+aliases:
+- decisiontree
+creation_timestamp: 1729869759408
+current_stage: None
+description: A Decision Tree model focused on interpretability and efficient performance
+  with reasonable accuracy for quick classification tasks.
+last_updated_timestamp: 1729869835963
+name: Decision Tree
+run_id: 4c9c108fc87149d78ffc10c041f9a513
+run_link: ''
+source: file:///C:/Users/BESTWAY/Downloads/Technical Project/ML Flow/Sentiment_Analysis_Artifacts/4c9c108fc87149d78ffc10c041f9a513/artifacts/Decision
+  Tree
+status: READY
+status_message: null
+storage_location: file:///C:/Users/BESTWAY/Downloads/Technical Project/ML Flow/Sentiment_Analysis_Artifacts/4c9c108fc87149d78ffc10c041f9a513/artifacts/Decision
+  Tree
+user_id: null
+version: 1

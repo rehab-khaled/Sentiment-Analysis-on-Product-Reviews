@@ -1,0 +1,7 @@
+aliases:
+  logisticregression_basicmodel: '1'
+creation_timestamp: 1729857720069
+description: A straightforward Logistic Regression model, chosen for its simplicity
+  and interpretability, serving as a baseline model for performance comparison.
+last_updated_timestamp: 1729871548717
+name: Logistic Regression
